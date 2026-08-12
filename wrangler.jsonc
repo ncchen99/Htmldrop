@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "htmldrop",
+  "compatibility_date": "2026-08-01",
+  "pages_build_output_dir": "public",
+
+  // R2 公開網址（分享連結的前綴）。這個值本來就是公開的，放在版本控制沒問題。
+  "vars": {
+    "PUBLIC_BASE": "https://pub-c8f72066867d4679a4095d2b9e00b1c6.r2.dev"
+  },
+
+  "r2_buckets": [
+    { "binding": "BUCKET", "bucket_name": "htmldrop" }
+  ],
+
+  // 分支預覽版本用同一組設定，才不會一部署預覽就壞掉
+  "env": {
+    "preview": {
+      "vars": {
+        "PUBLIC_BASE": "https://pub-c8f72066867d4679a4095d2b9e00b1c6.r2.dev"
+      },
+      "r2_buckets": [
+        { "binding": "BUCKET", "bucket_name": "htmldrop" }
+      ]
+    }
+  }
+}

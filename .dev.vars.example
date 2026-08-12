@@ -1,0 +1,3 @@
+# 本地開發用。複製成 .dev.vars（已被 .gitignore 忽略）後填入自己的值。
+# 正式環境的值是用 `npx wrangler pages secret put UPLOAD_KEY --project-name htmldrop` 設定的。
+UPLOAD_KEY=dev

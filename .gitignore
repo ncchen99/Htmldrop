@@ -1,0 +1,21 @@
+# 相依套件
+node_modules/
+
+# Wrangler 本地狀態（含本地模擬的 R2 資料）
+.wrangler/
+
+# 本地環境變數與密鑰 — 絕對不要 commit
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+
+# 編輯器 / 工具
+.claude/settings.local.json
+.vscode/
+.idea/
+
+# macOS
+.DS_Store

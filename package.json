@@ -1,0 +1,14 @@
+{
+  "name": "htmldrop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "把 HTML 檔案變成一個可以分享的連結（Cloudflare Pages + R2）",
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy",
+    "secret": "wrangler pages secret put UPLOAD_KEY --project-name htmldrop"
+  },
+  "devDependencies": {
+    "wrangler": "^4.122.0"
+  }
+}

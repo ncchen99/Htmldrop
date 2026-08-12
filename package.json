@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler pages dev",
     "deploy": "wrangler pages deploy",
-    "secret": "wrangler pages secret put UPLOAD_KEY --project-name htmldrop"
+    "secret": "wrangler pages secret put UPLOAD_KEY --project-name htm1drop"
   },
   "devDependencies": {
     "wrangler": "^4.122.0"

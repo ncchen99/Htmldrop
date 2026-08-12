@@ -2,7 +2,7 @@
 
 把一個 HTML 檔案變成一個可以傳給別人的連結。丟進去、拿到網址、傳出去，沒有別的功能。
 
-- **上傳頁**：<https://htmldrop-71e.pages.dev>
+- **上傳頁**：<https://htm1drop.pages.dev>
 - **分享連結長這樣**：`https://pub-c8f72066867d4679a4095d2b9e00b1c6.r2.dev/m/k3f9a2b1cd`
 
 ---
@@ -99,8 +99,8 @@ npm run deploy
 ### 改上傳密碼
 
 ```bash
-npx wrangler pages secret put UPLOAD_KEY --project-name htmldrop
-npx wrangler pages secret put UPLOAD_KEY --project-name htmldrop --env preview
+npx wrangler pages secret put UPLOAD_KEY --project-name htm1drop
+npx wrangler pages secret put UPLOAD_KEY --project-name htm1drop --env preview
 ```
 
 密碼存在 Cloudflare 的 secret 裡，不在這個 repo 內。改完之後所有裝置都要重新輸入一次。

@@ -44,18 +44,23 @@
 
     <!-- 步驟 1：丟檔案 -->
     <div id="dropView">
-      <h1 class="title">把 HTML 變成一個連結</h1>
-      <p class="subtitle">丟進來，馬上得到可以傳給別人的網址。</p>
+      <h1 class="title">把 HTML 或靜態網站變成一個連結</h1>
+      <p class="subtitle">丟檔案或資料夾進來，馬上得到可以傳給別人的網址。</p>
 
-      <button type="button" class="dropzone" id="dropzone">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="上傳區域：可拖曳 HTML 檔案或資料夾到此處">
         <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M3.5 16.5v2A2.5 2.5 0 0 0 6 21h12a2.5 2.5 0 0 0 2.5-2.5v-2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
         </svg>
-        <span class="dropzone-title">把 HTML 檔案拖進來</span>
-        <span class="dropzone-hint">或點一下選檔案　·　也可以直接貼上原始碼</span>
-      </button>
+        <span class="dropzone-title">把 HTML 檔案或靜態網站資料夾拖進來</span>
+        <span class="dropzone-hint">直接拖曳到這裡，或點擊下方選取</span>
+        <div class="dropzone-actions">
+          <button type="button" class="btn btn-quiet btn-sm" id="pickFileBtn">選取單檔</button>
+          <button type="button" class="btn btn-quiet btn-sm" id="pickFolderBtn">選取資料夾</button>
+        </div>
+      </div>
       <input type="file" id="fileInput" accept=".html,.htm,text/html" hidden>
+      <input type="file" id="folderInput" webkitdirectory hidden>
 
       <div class="ttl-row">
         <span class="ttl-label" id="ttlLabel">保存期限</span>
